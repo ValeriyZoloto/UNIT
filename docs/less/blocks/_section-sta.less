@@ -1,0 +1,85 @@
+.cta {
+  position: relative;
+  padding-top: 71px;
+  padding-bottom: 75px;
+  background-color: #0a824e;
+  color: #fff;
+
+  background-image: url(./../img/sta/sta.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // Планшет
+  @media (min-width: 768px) {
+    padding-top: 69px;
+    padding-bottom: 80px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    padding-top: 82px;
+    padding-bottom: 90px;
+    background-position: center 10%;
+  }
+}
+
+.cta::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 130, 78, 0.7);
+}
+
+.cta-content {
+  position: relative;
+  text-align: center;
+}
+
+.cta-title {
+  margin-bottom: 38px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    margin-bottom: 52px;
+  }
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-bottom: 48px;
+  }
+}
+
+.cta-title h2 {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 1.3;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cta-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+}
+
+.button-cta {
+  padding: 0 42px;
+  background-color: #fff;
+  color: #2bb279;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.904);
+    background-color: rgb(25, 100, 75);
+    color: white;
+    cursor: pointer;
+  }
+}

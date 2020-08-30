@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 100%;
+
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+.relative {
+  position: relative;
+}
+
+.none {
+  display: none;
+}
+
+.section-title {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(80, 227, 164);
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 3.2px;
+}
+.subject-title {
+  margin-bottom: 27px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 2.8px;
+  text-align: center;
+
+  // Планшет
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+
+.section-title--small {
+  font-size: 16px;
+  // Планшет
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+.section-title.section-title--small {
+  font-size: 14px;
+}
+
+.section-header {
+  margin: 0;
+  color: #2e2e2e;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  &&--white {
+    color: #fff;
+  }
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-size: 42px;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    font-size: 48px;
+  }
+}

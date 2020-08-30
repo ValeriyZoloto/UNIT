@@ -1,0 +1,131 @@
+.tasks {
+  position: relative;
+  padding-top: 67px;
+  padding-bottom: 40px;
+  background-color: white;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 68px;
+    height: 68px;
+    background-color: #a4eecb;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  // Планшет
+  @media (min-width: 768px) {
+    padding-top: 65px;
+    padding-bottom: 36px;
+    &::before {
+      display: none;
+    }
+  }
+  // Десктоп
+  @media (min-width: 1200px) {
+    padding-top: 79px;
+    padding-bottom: 34px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 187px;
+      height: 187px;
+      background-color: #a4eecb;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+  }
+}
+
+.tasks-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  // Планшет
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    flex-direction: unset;
+    align-items: center;
+  }
+}
+
+.tasks-content_column {
+  text-align: center;
+
+  // Планшет
+  @media (min-width: 768px) {
+    padding-right: 19px;
+    padding-top: 17px;
+    width: 55%;
+    text-align: left;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    width: 50%;
+    padding-left: 100px;
+    align-items: center;
+    padding-right: 40px;
+  }
+}
+
+.task-text {
+  margin-bottom: 56px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+  }
+}
+
+.tasks-img {
+  margin: 0 auto;
+  width: 200px;
+
+  // Планшет
+  @media (min-width: 768px) {
+    width: 45%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  // Десктоп
+  @media (min-width: 1200px) {
+    width: 50%;
+    padding-left: 80px;
+    align-items: center;
+  }
+}
+.tasc-content section-title {
+  margin-bottom: 27px;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+.section-header {
+  margin-bottom: 37px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}

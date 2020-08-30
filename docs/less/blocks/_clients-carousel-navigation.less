@@ -1,0 +1,62 @@
+.clients-carousel.owl-carousel .owl-nav button.owl-prev,
+.clients-carousel.owl-carousel .owl-nav button.owl-next {
+  width: 52px;
+  height: 52px;
+
+  background-image: url("../img/carousel/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -20px;
+  transform: translate(-100%, 100%);
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  span {
+    display: none;
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    top: 13px;
+    bottom: auto;
+    margin-left: 0;
+    left: 0;
+    transform: unset;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    top: 17px;
+    left: -40px;
+    transform: translateX(-100%);
+  }
+}
+
+.clients-carousel.owl-carousel .owl-nav button.owl-next {
+  background-image: url("../img/carousel/arrow-right.svg");
+
+  margin-left: 20px;
+  transform: translateY(100%);
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    top: -39px;
+    right: 0;
+    left: auto;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    top: 18px;
+    right: -40px;
+    left: auto;
+    transform: translateX(100%);
+  }
+}

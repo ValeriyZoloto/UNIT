@@ -1,0 +1,130 @@
+.footer {
+  padding: 55px 0 67px;
+  background-color: #1a1a1a;
+  //Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    padding: 70px 0 71px;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    padding: 82px 0 67px;
+  }
+}
+.footer__nav-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 39px;
+  //Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 49px;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    margin-bottom: 54px;
+  }
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 49px;
+  align-items: center;
+  //Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+.footer__nav-item {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  transition: 0.5s;
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  &:hover {
+    color: rgba(172, 176, 182, 0.7);
+  }
+  //Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 40px;
+    &:last-child {
+      //   margin-bottom: 20px;
+    }
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.footer__social {
+  display: flex;
+}
+.footer__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  //Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-right: 32px;
+  }
+  //Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-right: 32px;
+  }
+}
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  p {
+    width: 210px;
+    margin: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.302);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    //Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+      letter-spacing: 0;
+    }
+    //Медиа запрос для десктопов
+    @media (min-width: 1200px) {
+      width: unset;
+    }
+  }
+  span {
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+}
